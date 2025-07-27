@@ -9,12 +9,15 @@
 // | Author: yunwuxin <448901948@qq.com>
 // +----------------------------------------------------------------------
 
-\think\Console::addDefaultCommands([
-    "think\\queue\\command\\Work",
-    "think\\queue\\command\\Restart",
-    "think\\queue\\command\\Listen",
-    "think\\queue\\command\\Subscribe"
-]);
+// 判断 \think\Console 是否存在
+if (class_exists('\\think\\Console')) {
+    \think\Console::addDefaultCommands([
+        "think\\queue\\command\\Work",
+        "think\\queue\\command\\Restart",
+        "think\\queue\\command\\Listen",
+        "think\\queue\\command\\Subscribe"
+    ]);
+}
 
 if (!function_exists('queue')) {
 
