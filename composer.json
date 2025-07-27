@@ -1,5 +1,5 @@
 {
-    "name": "topthink/think-queue",
+    "name": "itime/think-queue",
     "description": "The ThinkPHP5 Queue Package",
     "type": "think-extend",
     "authors": [
